@@ -22,14 +22,14 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R               &kp T        &kp Y      &kp U  &kp I      &kp O    &kp P          &kp BSPC
-&kp LCTRL  &kp A  &kp S  &kp D     &kp F               &kp G        &kp H      &kp J  &kp K      &kp L    &kp BACKSPACE  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V               &kp B        &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH       &kp ESC
-                         &kp LGUI  &lt 1 LEFT_CONTROL  &kp SPACE    &kp SPACE  &mo 2  &kp RALT
+&trans  &kp Q             &kp W  &kp E     &kp R             &kp T               &kp Y        &kp U           &kp I         &kp O    &kp P                  &trans
+&trans  &kp A             &kp S  &kp D     &kp F             &kp G               &kp H        &kp J           &kp K         &kp L    &kp BACKSPACE          &trans
+&trans  &mt LEFT_SHIFT Z  &kp X  &kp C     &mt LEFT_ALT V    &kp B               &kp N        &kp M           &kp COMMA     &kp DOT  &mt RIGHT_SHIFT SLASH  &trans
+                                 &kp LGUI  &kp LEFT_CONTROL  &mt LEFT_WIN TAB    &lt 1 SPACE  &lt 2 KP_ENTER  &lt 3 ESCAPE
             >;
         };
 
-        lower_layer {
+        layer1 {
             display-name = "Lower Layer";
 
             // -----------------------------------------------------------------------------------------
@@ -39,14 +39,14 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
-&kp LSHFT   &trans        &trans        &trans        &trans        &trans          &trans    &trans    &trans    &trans     &trans  &trans
-                                        &kp LGUI      &trans        &kp SPACE       &kp RET   &trans    &kp RALT
+&trans  &kp LS(MINUS)         &kp MINUS         &kp LS(EQUAL)  &kp EQUAL          &kp LS(SEMICOLON)    &kp GRAVE      &kp C_PREVIOUS  &kp UP_ARROW  &kp C_NEXT       &kp DELETE  &trans
+&trans  &kp LS(LEFT_BRACKET)  &kp LS(N9)        &kp LS(N0)     &kp LS(RBKT)       &bt BT_SEL 4         &kp ESCAPE     &kp DOWN        &kp DOWN      &kp RIGHT        &kp C_PLAY  &trans
+&trans  &kp LEFT_BRACKET      &kp SINGLE_QUOTE  &kp LS(APOS)   &kp RIGHT_BRACKET  &kp SEMICOLON        &kp LS(GRAVE)  &kp C_VOL_DN    &kp C_MUTE    &kp C_VOLUME_UP  &trans      &trans
+                                                &trans         &trans             &trans               &trans         &trans          &trans
             >;
         };
 
-        raise_layer {
+        layer2 {
             display-name = "Raise Layer";
 
             // -----------------------------------------------------------------------------------------
@@ -60,6 +60,15 @@
 &kp LCTRL  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
 &kp LSHFT  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
                              &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
+            >;
+        };
+
+        layer3 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
