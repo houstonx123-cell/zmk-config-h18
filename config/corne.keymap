@@ -44,7 +44,7 @@
 
             bindings = <
 &trans  &kp LS(MINUS)         &kp MINUS         &kp LS(EQUAL)  &kp EQUAL          &kp LS(SEMICOLON)    &kp GRAVE      &kp C_PREVIOUS  &kp UP_ARROW  &kp C_NEXT       &kp DELETE     &trans
-&trans  &kp LS(LEFT_BRACKET)  &kp LS(N9)        &kp LS(N0)     &kp LS(RBKT)       &kp LS(BACKSLASH)    &kp ESCAPE     &kp DOWN        &kp DOWN      &kp RIGHT        &kp C_PLAY     &trans
+&trans  &kp LS(LEFT_BRACKET)  &kp LS(N9)        &kp LS(N0)     &kp LS(RBKT)       &kp LS(BACKSLASH)    &kp ESCAPE     &kp LEFT_ARROW  &kp DOWN      &kp RIGHT        &kp C_PLAY     &trans
 &trans  &kp LEFT_BRACKET      &kp SINGLE_QUOTE  &kp LS(APOS)   &kp RIGHT_BRACKET  &kp SEMICOLON        &kp LS(GRAVE)  &kp C_VOL_DN    &kp C_MUTE    &kp C_VOLUME_UP  &kp BACKSLASH  &trans
                                                 &trans         &kp HOME           &trans               &trans         &trans          &trans
             >;
